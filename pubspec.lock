@@ -76,7 +76,7 @@ packages:
     description:
       path: "packages/custom_lint"
       ref: main
-      resolved-ref: a65a375ab1bfb1145ba06024a7038550d314634e
+      resolved-ref: "9e12f2b48346b56100735030ec7409623722b14e"
       url: "https://github.com/andrzejchm/dart_custom_lint.git"
     source: git
     version: "0.0.9+1"
@@ -85,7 +85,7 @@ packages:
     description:
       path: "packages/custom_lint_builder"
       ref: main
-      resolved-ref: a65a375ab1bfb1145ba06024a7038550d314634e
+      resolved-ref: "9e12f2b48346b56100735030ec7409623722b14e"
       url: "https://github.com/andrzejchm/dart_custom_lint.git"
     source: git
     version: "0.0.9+2"

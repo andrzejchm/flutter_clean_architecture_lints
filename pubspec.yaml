@@ -6,8 +6,8 @@ environment:
 dependencies:
   collection:
   # we will use analyzer for inspecting Dart files
-  analyzer: 4.6.0
-  analyzer_plugin: 0.11.1
+  analyzer: ^4.6.0
+  analyzer_plugin: ^0.11.1
   # custom_lint_builder will give us tools for writing lints
   custom_lint_builder:
     git:
