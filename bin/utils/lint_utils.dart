@@ -88,8 +88,6 @@ extension LibraryElementExtensions on Element {
             (it) => [
               !it.name.endsWith("Failure"),
               !it.isDartCoreEnum,
-              !it.isMixin,
-              !it.isEnum,
               !it.isAbstract,
             ].every((it) => it),
           )

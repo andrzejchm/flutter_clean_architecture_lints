@@ -5,7 +5,7 @@ import '../utils/lint_codes.dart';
 import '../utils/lint_utils.dart';
 
 /// checks whether domain entity class (anything inside 'domain/model' folder except Failures)
-/// extemds Equatable
+/// extends Equatable
 class DomainEntityMissingEquatableLint extends PluginBase {
   @override
   Stream<Lint> getLints(ResolvedUnitResult unit) async* {
@@ -15,7 +15,7 @@ class DomainEntityMissingEquatableLint extends PluginBase {
     }
     final entitiesClasses = library.domainEntitiesClasses;
     for (final clazz in entitiesClasses) {
-      if (!clazz.allSupertypes.any((it) => it.element.name == 'Equatable' || it.element.name == 'EquatableMixin')) {
+      if (!clazz.allSupertypes.any((it) => it.element2.name == 'Equatable' || it.element2.name == 'EquatableMixin')) {
         yield Lint(
           code: LintCodes.missingEquatable,
           message: 'Domain entity is not extending Equatable',
